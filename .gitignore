@@ -1,0 +1,32 @@
+# .gitignore - Version control exclusion rules for MediChain E-MedicVault
+
+# ── Security-critical files ────────────────────────────────────────────────────
+# .env contains database credentials and the AES-256 encryption key.
+# Committing .env embeds secrets permanently in git history — even after deletion,
+# they remain recoverable via: git log --all -- .env && git show <sha>:.env
+.env
+.env.*
+!.env.example
+
+# ── Application dependencies ───────────────────────────────────────────────────
+vendor/
+composer.lock
+
+# ── Log files (may contain PII or stack traces) ────────────────────────────────
+*.log
+logs/
+storage/logs/
+
+# ── PHP temp and cache files ───────────────────────────────────────────────────
+*.tmp
+*.cache
+.phpunit.cache/
+.phpunit.result.cache
+
+# ── IDE and OS metadata ────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
