@@ -36,11 +36,10 @@ medichain-secr4483/
 │       └── SecurityTest.php    # PHPUnit 10.x — 3 runtime state assertions
 │
 ├── Configuration
-│   ├── .env.example            # Environment variable template (no real secrets)
-│   ├── .gitignore              # Excludes .env, vendor/, logs/
-│   └── phpunit.xml             # PHPUnit configuration
-│
-└── script.txt                  # Video presentation script (Question 5)
+    ├── .env.example            # Environment variable template (no real secrets)
+    ├── .gitignore              # Excludes .env, vendor/, logs/
+    └── phpunit.xml             # PHPUnit configuration
+
 ```
 
 ---
